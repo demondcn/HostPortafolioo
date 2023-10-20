@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento, en este caso, HTML -->
+<html lang="es"> <!-- Inicio del documento HTML con el idioma español -->
+<head>
+	<meta charset="UTF-8"> <!-- Definición del juego de caracteres utilizado -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+	<title>Java</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
+	<link rel="stylesheet" href="css/Stilo.css"> <!-- Enlace a una hoja de estilos externa -->
+</head>
+<body>
+	<header> <!-- Encabezado de la página -->
+        <nav>
+			<a href="../../index.html"> inicio </a> <!-- Enlace a la página "index.html" con el texto "inicio" -->
+		</nav>
+		<section class="textos-header"> <!-- Sección de texto en el encabezado -->
+         <h1 >Java</h1> <!-- Título principal -->
+		 <h3 id="output"></h3> <!-- Un elemento de encabezado secundario con un ID específico -->
+		</section>
+		<div class="Ola" style="height: 150px; overflow: hidden;" > <!-- Div del efecto de ola del header de la página -->
+			<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+				<path d="M-37.52,-66.59 C335.50,263.98 349.20,-49.98 563.48,38.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FFF;"></path> <!-- Un elemento SVG con un camino (path) definido -->
+			</svg>
+		</div>
+        <video id="video-background" controls autoplay loop muted>
+            <source src="imgs/java1.mp4" type="video/mp4"> <!-- Fuente de video en formato MP4 -->
+            Tu navegador no admite la reproducción de videos. <!-- Mensaje de respaldo si el navegador no admite la reproducción de videos -->
+        </video>
+		<button id="sound-toggle" class="sound-off"></button> <!-- Botón de alternar sonido con una clase "sound-off" -->
+	</header>
+
+	<main> <!-- Contenido principal de la página -->
+		<section class="contenerdor-Section"> <!-- Sección de información personal -->
+           <h1 class="titulo"> Java </h1> <!-- Título de la sección con una clase "titulo" -->
+           <div class="subcontenerdor"> <!-- Contenedor de información personal -->
+            <img src="imgs/programacionchibi.jpg" alt="" class="imagen1"> <!-- Imagen con una clase y atributo alt -->
+			 <div class="contenedor-textos"> <!-- Contenedor de textos -->
+				<h3><span>0</span> Que es Java? </h3> <!-- Título de la primera sección de texto -->
+				<p>Java es un lenguaje de programación de alto nivel conocido por su portabilidad y versatilidad. Fue desarrollado por Sun Microsystems y es ampliamente utilizado en aplicaciones empresariales, desarrollo de aplicaciones móviles Android y en sistemas embebidos. Java se destaca por su capacidad de ejecutarse en diferentes plataformas sin necesidad de recompilar, gracias a la máquina virtual Java (JVM). Esto lo hace ideal para aplicaciones que deben funcionar en múltiples entornos y dispositivos.</p> <!-- Párrafo de texto -->
+				<br>
+				<h3><span>1</span> Cual es su diferencia con otros lenguajes? </h3> <!-- Título de la segunda sección de texto -->
+				<p>La principal diferencia de Java con otros lenguajes de programación radica en su portabilidad, ya que utiliza la máquina virtual Java (JVM) para ejecutarse en diversas plataformas sin necesidad de modificar el código fuente. Además, Java es altamente utilizado en el desarrollo de aplicaciones Android y es conocido por su robustez y seguridad, lo que lo convierte en una opción popular para aplicaciones empresariales y sistemas críticos.</p> <!-- Párrafo de texto -->
+				<h3><span>2</span> Un ejemplo de su sintaxis es:</h3> <!-- Título de la primera sección de texto -->
+                <img src="imgs/javaSintaxis.jpg" alt="" class="imagen1"> <!-- Imagen con una clase y atributo alt -->
+			 </div>
+		   </div>
+		</section>
+	</main>
+
+	<script src="js/Javajs.js"></script> <!-- Inclusión de un archivo JavaScript externo -->
+</body>
+</html>

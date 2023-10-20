@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento, en este caso, HTML -->
+<html lang="es"> <!-- Inicio del documento HTML con el idioma español -->
+<head>
+	<meta charset="UTF-8"> <!-- Definición del juego de caracteres utilizado -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+	<title>Mys Proyectos</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
+	<link rel="stylesheet" href="css/Stilo.css"> <!-- Enlace a una hoja de estilos externa -->
+</head>
+<body>
+	<header> <!-- Encabezado de la página -->
+        <nav>
+			<a href="../index.html"> inicio </a> <!-- Enlace a la página "index.html" con el texto "inicio" -->
+		</nav>
+		<section class="textos-header"> <!-- Sección de texto en el encabezado -->
+         <h1 >Mys Proyectos Realizados</h1> <!-- Título principal -->
+		 <h3 id="output"></h3> <!-- Un elemento de encabezado secundario con un ID específico -->
+		</section>
+		<div class="Ola" style="height: 150px; overflow: hidden;" > <!-- Div del efecto de ola del header de la página -->
+			<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+				<path d="M-37.52,-66.59 C335.50,263.98 349.20,-49.98 563.48,38.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FFF;"></path> <!-- Un elemento SVG con un camino (path) definido -->
+			</svg>
+		</div>
+        <video id="video-background" controls autoplay loop muted>
+            <source src="imgs/dayinmylife.mp4" type="video/mp4"> <!-- Fuente de video en formato MP4 -->
+            Tu navegador no admite la reproducción de videos. <!-- Mensaje de respaldo si el navegador no admite la reproducción de videos -->
+        </video>
+		<button id="sound-toggle" class="sound-off"></button> <!-- Botón de alternar sonido con una clase "sound-off" -->
+	</header>
+
+	<main> <!-- Contenido principal de la página -->
+		<section class="contenerdor-Section"> <!-- Sección de información personal -->
+           <h1 class="titulo">Mis proyectos Realizados </h1> <!-- Título de la sección con una clase "titulo" -->
+           <div class="subcontenerdor"> <!-- Contenedor de información personal -->
+            <img src="imgs/mimi.jpg" alt="" class="imagen1"> <!-- Imagen con una clase y atributo alt -->
+			 <div class="contenedor-textos"> <!-- Contenedor de textos -->
+				<h3><span>0</span> Mis proyectos </h3> <!-- Título de la primera sección de texto -->
+				<ul>
+					<li>
+						<h2>Mi primer repositorio</h2>
+						<p>mi primer repositorio sobre python practica</p>
+						<a href="https://github.com/demondcn/pythonproyects">Ver proyecto</a>
+					</li>
+					<li>
+						<h2>Proyecto 1:</h2>
+						<p>mi primer proyecto python usando for</p>
+						<a href="https://github.com/demondcn/pythonproyects/blob/master/1.ejercicio.py">Ver proyecto</a>
+					</li>
+					<li>
+						<h2>Proyecto 2:</h2>
+						<p>mi segundo proyecto python usando for</p>
+						<a href="https://github.com/demondcn/pythonproyects/blob/master/2.ejercicio.py">Ver proyecto</a>
+					</li>
+					<li>
+						<h2>Proyecto 3:</h2>
+						<p>practica bucles</p>
+						<a href="https://github.com/demondcn/pythonproyects/blob/master/3.ejercicio.py">Ver proyecto</a>
+					</li>
+					<li>
+						<h2>Proyecto 4:</h2>
+						<p>practica de condicionales</p>
+						<a href="https://github.com/demondcn/pythonproyects/blob/master/4.ejercicio.py">Ver proyecto</a>
+					</li>
+					<!-- Agrega más proyectos según sea necesario -->
+				</ul>
+			 </div>
+		   </div>
+		</section>
+	</main>
+
+	<script src="js/modulo1.js"></script> <!-- Inclusión de un archivo JavaScript externo -->
+</body>
+</html>

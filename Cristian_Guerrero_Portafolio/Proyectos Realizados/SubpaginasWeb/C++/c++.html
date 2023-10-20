@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento, en este caso, HTML -->
+<html lang="es"> <!-- Inicio del documento HTML con el idioma español -->
+<head>
+	<meta charset="UTF-8"> <!-- Definición del juego de caracteres utilizado -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+	<title>C++</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
+	<link rel="stylesheet" href="css/Stilo.css"> <!-- Enlace a una hoja de estilos externa -->
+</head>
+<body>
+	<header> <!-- Encabezado de la página -->
+        <nav>
+			<a href="../../index.html"> inicio </a> <!-- Enlace a la página "index.html" con el texto "inicio" -->
+		</nav>
+		<section class="textos-header"> <!-- Sección de texto en el encabezado -->
+         <h1 >C++</h1> <!-- Título principal -->
+		 <h3 id="output"></h3> <!-- Un elemento de encabezado secundario con un ID específico -->
+		</section>
+		<div class="Ola" style="height: 150px; overflow: hidden;" > <!-- Div del efecto de ola del header de la página -->
+			<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+				<path d="M-37.52,-66.59 C335.50,263.98 349.20,-49.98 563.48,38.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FFF;"></path> <!-- Un elemento SVG con un camino (path) definido -->
+			</svg>
+		</div>
+        <video id="video-background" controls autoplay loop muted>
+            <source src="imgs/C++1.mp4" type="video/mp4"> <!-- Fuente de video en formato MP4 -->
+            Tu navegador no admite la reproducción de videos. <!-- Mensaje de respaldo si el navegador no admite la reproducción de videos -->
+        </video>
+		<button id="sound-toggle" class="sound-off"></button> <!-- Botón de alternar sonido con una clase "sound-off" -->
+	</header>
+
+	<main> <!-- Contenido principal de la página -->
+		<section class="contenerdor-Section"> <!-- Sección de información personal -->
+           <h1 class="titulo"> C++ </h1> <!-- Título de la sección con una clase "titulo" -->
+           <div class="subcontenerdor"> <!-- Contenedor de información personal -->
+            <img src="imgs/c++chibi.png" alt="" class="imagen1"> <!-- Imagen con una clase y atributo alt -->
+			 <div class="contenedor-textos"> <!-- Contenedor de textos -->
+				<h3><span>0</span> Que es C++? </h3> <!-- Título de la primera sección de texto -->
+				<p>C++ es un lenguaje de programación versátil y poderoso ampliamente utilizado en el desarrollo de software de sistemas, juegos, aplicaciones de escritorio y más. Es una extensión del lenguaje C que agrega características de programación orientada a objetos, lo que permite la creación de código modular y reutilizable. C++ se destaca por su rendimiento cercano al lenguaje ensamblador y su capacidad de control de bajo nivel, lo que lo hace ideal para aplicaciones que requieren un alto rendimiento y eficiencia en el uso de recursos.</p> <!-- Párrafo de texto -->
+				<br>
+				<h3><span>1</span> Cual es su diferencia con otros lenguajes? </h3> <!-- Título de la segunda sección de texto -->
+				<p>La principal diferencia de C++ con otros lenguajes radica en su capacidad para combinar programación orientada a objetos con programación de bajo nivel. Esto permite un control preciso sobre la memoria y un alto rendimiento, lo que lo diferencia de lenguajes más modernos que priorizan la simplicidad y la seguridad. C++ es una elección común para proyectos que requieren un equilibrio entre eficiencia y abstracción.</p> <!-- Párrafo de texto -->
+				<h3><span>2</span> Un ejemplo de su sintaxis es:</h3> <!-- Título de la primera sección de texto -->
+                <img src="imgs/C++Sintaxis.jpg" alt="" class="imagen1"> <!-- Imagen con una clase y atributo alt -->
+			 </div>
+		   </div>
+		</section>
+	</main>
+
+	<script src="js/C++js.js"></script> <!-- Inclusión de un archivo JavaScript externo -->
+</body>
+</html>

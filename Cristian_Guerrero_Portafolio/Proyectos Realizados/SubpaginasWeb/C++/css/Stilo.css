@@ -1,0 +1,205 @@
+/* Estilos globales para todos los elementos */
+* {
+    margin: 0; /* Establece el margen exterior en 0 para todos los elementos */
+    padding: 0; /* Establece el relleno interior en 0 para todos los elementos */
+    box-sizing: border-box; /* El modelo de caja debe ser 'border-box' en lugar de '0' */
+}
+
+/* Estilos para el cuerpo (body) del documento */
+body {
+    font-family: 'Open Sans'; /* Fuente utilizada en el cuerpo del documento */
+}
+
+/* Estilos para la sección "contenedor-Sobre-mi" */
+.contenerdor-Section {
+    padding: 60px 0; /* Relleno (padding) arriba y abajo de 60px, y ningún relleno a los lados */
+    width: 90%; /* Ancho del contenedor del 90% del ancho disponible */
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+}
+
+/* Estilos para el título dentro de "contenerdor-Sobre-mi" */
+.titulo {
+    color: rgb(0, 255, 255); /* Color del texto en azul */
+    font-size: 60px; /* Tamaño de fuente de 60px */
+    text-align: center; /* Alineación del texto al centro */
+    margin-bottom: 60px; /* Margen inferior de 60px */
+    -webkit-text-stroke: 0.5px #0000ff; /* Contorno de 2 píxeles de ancho y color rojo en navegadores webkit (Chrome, Safari) */
+}
+
+/* Estilos para el encabezado (header) de la página */
+/* Fondo con gradiente y una imagen de fondo */
+header {
+    width: 100%;
+    height: 600px; /* Altura del encabezado */
+    background-size: cover; /* Ajusta el tamaño de fondo para cubrir el área */
+    background-attachment: fixed; /* Fija el fondo mientras se desplaza la página */
+    position: relative; /* Posición relativa para que los elementos internos puedan posicionarse con respecto a él */
+    overflow: hidden; /* Para ocultar el desbordamiento del video */
+}
+
+header::before {
+    content: ""; /* Agrega contenido antes del elemento; en este caso, lo dejamos vacío */
+    position: absolute; /* Establece la posición del pseudo-elemento como "absolute", lo que permite posicionarlo dentro del elemento principal */
+    top: 0; /* Coloca el pseudo-elemento en la parte superior del elemento "header" */
+    left: 0; /* Coloca el pseudo-elemento en el lado izquierdo del elemento "header" */
+    width: 100%; /* Establece el ancho del pseudo-elemento como el 100% del ancho de "header" */
+    height: 100%; /* Establece la altura del pseudo-elemento como el 100% de la altura de "header" */
+    background: #0575E6;  /* Color de fondo de respaldo para navegadores antiguos */
+    background: -webkit-linear-gradient(to right, hsla(227, 97%, 24%, 0.637), hsla(210, 96%, 46%, 0.616));  /* Degradado lineal para navegadores WebKit (Chrome 10-25, Safari 5.1-6) */
+    background: linear-gradient(to right, hsla(227, 97%, 24%, 0.637), hsla(210, 96%, 46%, 0.616)); /* Degradado lineal estándar que funciona en la mayoría de los navegadores modernos */
+    z-index: -1; /* Establece el índice z en -1 para que el pseudo-elemento quede detrás del contenido principal de "header" */
+}
+
+
+#video-background {
+    position: absolute; /* Establece la posición del elemento como "absolute", lo que permite un posicionamiento preciso con respecto a su elemento padre */
+    top: 0; /* Coloca el elemento en la parte superior de su contenedor o elemento padre, sin ningún espacio en blanco en la parte superior */
+    left: 0; /* Coloca el elemento en el lado izquierdo de su contenedor o elemento padre, sin ningún espacio en blanco en el lado izquierdo */
+    width: 100%; /* Establece el ancho del elemento como el 100% del ancho de su contenedor, ocupando todo el ancho disponible */
+    height: 100%; /* Establece la altura del elemento como el 100% de la altura de su contenedor, ocupando todo el espacio vertical disponible */
+    object-fit: cover; /* Controla cómo el contenido del elemento se ajusta dentro de su caja, utilizando "cover" para que el contenido cubra completamente el contenedor sin distorsionar su proporción de aspecto */
+    opacity: 0.7; /* Ajusta la opacidad del video según tus preferencias */
+    z-index: -2; /* Coloca el video detrás de la capa de fondo */
+}
+
+
+/* Estilos para la barra de navegación (nav) dentro del encabezado */
+nav {
+    text-align: right; /* Alineación del texto a la derecha */
+    padding: 2px 0.5px 0 1px; /* Relleno arriba, derecha, abajo y izquierda */
+    z-index: 1; /* Asegura que el menú de navegación esté sobre la capa de fondo */
+}
+
+/* Estilos para los enlaces (a) dentro de la barra de navegación */
+nav > a {
+    display: inline-block; /* Convertir el enlace en un bloque en línea */
+    padding: 10px 20px; /* Espaciado interior para crear un aspecto de botón */
+    background-color: #0011ff; /* Color de fondo inicial */
+    color: #fff; /* Color del texto en blanco */
+    font-weight: 300; /* Grosor de la fuente */
+    text-decoration: none; /* Sin subrayado de enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Transición suave en 0.3 segundos */
+    margin-right: 10px; /* Margen derecho de 10px entre enlaces */
+}
+
+/* Estilos para los enlaces (a) cuando se pasa el cursor por encima */
+nav > a:hover {
+    background-color: #00f7ff; /* Cambiar el color de fondo al pasar el cursor */
+    color: #fff; /* Cambiar el color del texto al pasar el cursor */
+}
+
+/* Estilos para el contenido de texto dentro de la sección "textos-header" */
+.textos-header {
+    display: flex; /* Contenedor flexible para alinear elementos internos */
+    height: 430px; /* Altura de la sección */
+    width: 100%; /* Ancho del 100% del contenedor */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    justify-content: center; /* Alinea horizontalmente los elementos al centro */
+    flex-direction: column; /* Columna para apilar los elementos verticalmente */
+    text-align: center; /* Alineación del texto al centro */
+    z-index: 1;
+}
+
+/* Estilos para el título principal dentro de ".textos-header" */
+.textos-header h1 {
+    font-size: 100px; /* Tamaño de fuente de 100px */
+    color: #ffffff; /* Color del texto en blanco */
+}
+
+/* Estilos para el subtítulo dentro de ".textos-header" */
+.textos-header h2 {
+    font-size: 100px; /* Tamaño de fuente de 100px */
+    font-weight: 300; /* Grosor de la fuente */
+    color: #ffffff; /* Color del texto en blanco */
+}
+
+/* Estilos para el tercer nivel de encabezado (h3) dentro de ".textos-header" */
+.textos-header h3 {
+    font-size: 20px; /* Tamaño de fuente de 20px */
+    color: rgb(0, 255, 255); /* Color del texto en azul */
+}
+
+/* Estilos para el elemento con la clase "Ola" */
+.Ola {
+    position: absolute; /* Posición absoluta con respecto a su contenedor */
+    bottom: 0; /* Pegado al borde inferior del contenedor */
+    width: 100%; /* Ancho del 100% del contenedor */
+}
+
+/* Estilos para el contenedor de información personal */
+.subcontenerdor {
+    display: flex; /* Contenedor flexible para alinear elementos internos */
+    justify-content: space-evenly; /* Distribución equitativa del espacio entre elementos internos */
+}
+
+/* Estilos para la imagen con la clase "imagen1" */
+.imagen1 {
+    width: 50%; /* Ancho de la imagen al 50% del contenedor */
+}
+
+/* Estilos para el contenedor de textos dentro de ".contenerdor-Sobre-mi" */
+.contenerdor-Section .contenedor-textos {
+    width: 48%; /* Ancho del 48% del contenedor padre */
+}
+
+/* Estilos para los títulos de sección dentro de ".contenedor-textos" */
+.contenedor-textos h3 {
+    margin-bottom: 15px; /* Margen inferior de 15px */
+    color: rgb(0, 47, 255); /* Color del texto en azul */
+}
+
+/* Estilos para el número dentro de ".contenedor-textos h3 span" */
+.contenedor-textos h3 span {
+    background: #001aff; /* Fondo azul */
+    color: #ffffff; /* Color del texto en azul */
+    border-radius: 50%; /* Borde redondeado */
+    display: inline-block; /* Elemento de bloque en línea */
+    text-align: center; /* Alineación del texto al centro */
+    width: 30px; /* Ancho de 30px */
+    height: 30px; /* Altura de 30px */
+    padding: 2px; /* Relleno interior de 2px */
+    box-shadow: 0 0 6px 0 rgba(14, 95, 245, 0.5); /* Sombra alrededor del elemento */
+    margin-right: 5px; /* Margen derecho de 5px entre elementos */
+}
+
+/* Estilos para los párrafos dentro de ".contenedor-textos" */
+.contenedor-textos p {
+    padding: 0 0 30px 15px; /* Relleno arriba, derecha, abajo e izquierda */
+}
+
+/* sonido-video */
+#sound-toggle {
+    position: absolute; /* Establece la posición del botón de alternancia como absoluta para posicionarlo en una ubicación específica en la página. */
+    top: 10px; /* Define la distancia desde la parte superior del elemento contenedor principal. En este caso, 10 píxeles desde la parte superior. */
+    left: 10px; /* Define la distancia desde el lado izquierdo del elemento contenedor principal. En este caso, 10 píxeles desde el lado izquierdo. */
+    background: transparent; /* Establece el fondo del botón como transparente, lo que significa que no tiene un fondo visible. */
+    border: none; /* Elimina cualquier borde alrededor del botón. */
+    font-size: 24px; /* Define el tamaño de fuente del texto dentro del botón como 24 píxeles. */
+    cursor: pointer; /* Cambia el cursor del mouse a una mano cuando pasa sobre el botón, indicando que es interactivo. */
+    z-index: 1; /* Establece la capa z-index del botón en 1, lo que puede ser útil para controlar la superposición de elementos en la página. */
+}
+
+#sound-toggle.sound-off::before {
+    content: "🔊"; /* Agrega un emoji de altavoz cuando el botón de alternancia tiene la clase 'sound-off'. Esto se coloca antes del contenido del botón. */
+}
+
+#sound-toggle.sound-on::before {
+    content: "🔉"; /* Agrega un emoji de altavoz más pequeño cuando el botón de alternancia tiene la clase 'sound-on'. Esto se coloca antes del contenido del botón. */
+}
+
+/* scroll arastrable */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0044ff; /* Color del pulgar (la parte arrastrable) */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #00f7ff; /* Color de fondo de la barra de desplazamiento */
+}
+
